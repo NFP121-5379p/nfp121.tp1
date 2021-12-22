@@ -97,7 +97,7 @@ public class Circle {
         int delta;
 
         if (distance < 0) {
-            delta = -1;
+            delta = -1; 
             distance = -distance;
         } else {
             delta = 1;
