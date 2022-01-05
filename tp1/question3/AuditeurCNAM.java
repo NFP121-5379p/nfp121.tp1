@@ -93,7 +93,7 @@ public class AuditeurCNAM {
         p=prenom;
     }
     else {
-         p=prenom.substring(0,0);
+         p=prenom.substring(0,1);
     }
 
         lowern=n.toLowerCase();

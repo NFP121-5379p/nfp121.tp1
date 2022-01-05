@@ -21,7 +21,7 @@ public class Picture {
     private Triangle roof;
     private Circle sun;
     private Circle soleil;
-
+    private int i;
     /**
      * Constructor for objects of class Picture
      */
@@ -88,13 +88,26 @@ public class Picture {
             wall.changeColor("red");
             window.changeColor("black");
             roof.changeColor("green");
-            sun.changeColor("yellow");
+            soleil.changeColor("yellow");
+            sun.changeColor("blue");
         }
     }
     public void sunset() {
         if (wall != null) // only if it's painted already...
         {
-           soleil.slowMoveVertical(280);
+           soleil.slowMoveVertical(280); 
+          // soleil.makeInvisible();
+           
+        }
+    }
+    public void TerreFixe() {
+        if (wall != null) // only if it's painted already...
+        {
+         wall.makeInvisible();
+         window.makeInvisible();
+         roof.makeInvisible();
+         sun.makeInvisible();
+         soleil.makeInvisible();
         }
     }
 
